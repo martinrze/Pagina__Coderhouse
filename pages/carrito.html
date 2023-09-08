@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los panes de Lola</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="shortcut icon" href="../imagenes proyecto coder/redes/Mi proyecto.png">
-    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-    <nav>
-        
-        <ul>
-            <li class="logo">
-            <a href="../index.html">
-                <img src="../imagenes proyecto coder/redes/Mi proyecto.png" alt="inicio" href="../index.html" >
-            </a> 
-            </li>
-            <li ><a href="../index.html">inicio</a></li>
-            
-            <li ><a href="./tienda.html">tienda</a></li>
 
+    <nav class="navbar navbar-expand-md nav__barra">
+        <div class="container-fluid nav__barra__lista">
+            <a class="navbar-brand" href="#">
+                <img src="../imagenes proyecto coder/redes/Mi proyecto.png" alt="Logo" width="70" height="70"
+                    href="../index.html">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <li><a href="./contacto.html">contacto</a></li>
-    
-            <li ><a href="./nosotros.html">nosotros</a></li>
-    
-            
-    
-        </ul>
+                    <li class="nav-item .nav__barra__lista__item">
+                        <a class="nav-link " href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item .nav__barra__lista__item">
+                        <a class="nav-link" href="./tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item .nav__barra__lista__item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item .nav__barra__lista__item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
     </nav>
-    
     
     
     <div class="product_page">
@@ -51,31 +68,49 @@
     
     
     
-    <footer>
-    <ul>
-        <li>
-             <a href="https://www.instagram.com/lospanesdelola/" target="_blank">
-            <img src="../imagenes proyecto coder/redes/instagram.png" alt="instagram" width="50"> 
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../imagenes proyecto coder/redes/facebook.png" alt="facebook" width="50">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.twitter.com/" target="_blank">
-                <img src="../imagenes proyecto coder/redes/twitter.png" alt="twitter" width="50">
-            </a>
-        </li>
-        <li>
-            <a href="http://wa.me/541124013850" target="_blank">
-                <img src="../imagenes proyecto coder/redes/whatsapp.png" alt="whatsapp" width="50">
-            </a>
-     
-        </li>
-    </ul>            
-</footer>
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="footer__flex__redes col-12 col-md-6">
+                <p>¡Seguinos en nuestras redes sociales!</p>
+                
+                <ul class="footer__flex__redes__ul">
+                    <li>
+                        <a href="https://www.instagram.com/lospanesdelola/" target="_blank">
+                            <img src="../imagenes proyecto coder/redes/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="../imagenes proyecto coder/redes/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img src="../imagenes proyecto coder/redes/twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://wa.me/541124013850" target="_blank">
+                            <img src="../imagenes proyecto coder/redes/whatsapp.png" alt="whatsapp">
+                        </a>
 
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__flex__nav col-12 col-md-6">
+                <p>Navegacion</p>
+                <ul class="footer__flex__nav__ul">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./tienda.html">Tienda</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
+
+
 </html> 

@@ -1,12 +1,12 @@
 * {
 	Margin: 0;
 	padding: 0;
-
+	box-sizing: border-box;
 }
 
 body {
 	background-color: #efd2e9;
-	font-family: 'Montserrat', sans-serif;
+
 
 }
 
@@ -15,15 +15,10 @@ body {
 
 footer {
 	background-color: #dea4d1;
-	size: auto;
-	height: 100px;
-}
-
-footer ul li {
-	display: inline-block;
-	padding: 20px 10px;
 
 }
+
+
 
 /**/
 
@@ -40,7 +35,7 @@ h1 {
 
 p {
 	padding: 10px 20px;
-	color: #606060;
+	color: #232323;
 	font-family: "Source Sans Pro";
 	font-weight: 300;
 	font-size: 16px;
@@ -256,6 +251,8 @@ input {
 
 body{
     background-color: #efd2e9;
+	font-family: "Lato";
+	color: #232323;
 
 }
 
@@ -289,3 +286,49 @@ h2{
 	text-align: center;
 	padding: 40px;
 }
+
+
+.footer__flex__redes__ul li {
+
+    width: 7rem;
+    padding: 1rem;
+    border-radius: 7rem;
+}
+
+	
+	.footer__flex__redes__ul {
+		display: flex;
+		list-style: none;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0;
+	}
+
+	.footer__flex__redes__ul li img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.footer__flex__nav__ul {
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+		align-items: center;
+		padding: 0;
+		
+	}
+
+	.footer__flex__nav__ul li a {
+		text-decoration: none;
+		text-transform: capitalize;
+		font-family: "Lato";
+		color: #232323;
+	}
+
+	.footer__flex__nav__ul li :hover{
+		text-decoration: underline;
+	}
+
+
+
+
