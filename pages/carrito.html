@@ -48,31 +48,117 @@
             </div>
         </div>
     </nav>
-    
-    
-    <div class="product_page">
-        <div>
-        <img src="../imagenes proyecto coder/Images/macarons.jpg" >
-        </div>
-        <div>
-            <h2>Nombre producto</h2>
-            <div class="price">$$$</div>
-            <div>
-                <label for="quantity">Cantidad</label>
-                <input type="number" min="1" max="10" value="1">
+
+    <main>
+        <div class="container-fluid text-center mb-4 product__page">
+            <div class="row g-5 justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 justify-content-center">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes proyecto coder/Images/tarta_ciruela1.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes proyecto coder/Images/tarta_ciruela2.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-6">
+                    <form class="row g-3 r-5 align-items-center ">
+                        <div class="col-12 ">
+                            <h2 class="titulo__seccion">Tarta de ciruela</h2>
+                            <div class="price">$2600</div>
+
+                            <p>Una tarta de ciruela con un equilibrio ideal de acidez y dulzura. Hecha con una base
+                                crocante de masa sablee y tiernas ciruelas especiadas.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <label for="Cantidad" class="form-label">Cantidad</label>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            
+                            <input type="number" min="1" value="1" class="form-control" id="Cantidad">
+
+                        </div>
+                        <div class="col-12 col-lg-5 d-grid gap-2 mx-auto">
+                            <button type="submit" class="btn  btn-primary boton">Agregar a carrito</button>
+                            
+                        </div>
+                    </form>
+
+
+
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repellendus sit suscipit. Nulla a quasi facilis nemo rerum, sed, dignissimos voluptatum ad magnam tempora natus iste totam! Aspernatur, neque nulla.</p>
-            <button class="add_cart">añadir carrito</button>
         </div>
-    </div>
+
+        </div>
+        </div>
+
+        <div class="container-fluid text-center background">
+            <h2 class="titulo__seccion">Productos Similares</h2
+                >
+            <div class="row g-5">
+                <div class="col-12 col-lg-4 ">
+                    <div class="card gallery__card ">
+                        <a class="stretched-link" href="./carrito.html"></a>
+                        <img src="../imagenes proyecto coder/Images/macarons.jpg" alt="macarons" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Macarons (unidad)</h5>
+                            <p class="card-text">$500</p>
     
+                        </div>
+                    </div>
+                </div>
     
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <div class="card gallery__card ">
+                        <a class="stretched-link" href="./carrito.html"></a>
+                        <img src="../imagenes proyecto coder/Images/pan_masa_madre.jpg" alt="pan masa madre" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Pan masa madre (kg)</h5>
+                            <p class="card-text">$900</p>
     
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <div class="card gallery__card ">
+                        <a class="stretched-link" href="./carrito.html"></a>
+                        <img src="../imagenes proyecto coder/Images/medialunas.jpg" alt="medialunas" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Medialunas (docena)</h5>
+                            <p class="card-text">$2500</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    </main>
+
     <footer class="footer container-fluid">
         <div class="row">
             <div class="footer__flex__redes col-12 col-md-6">
-                <p>¡Seguinos en nuestras redes sociales!</p>
-                
+                <p class="titulo__footer">¡Seguinos en nuestras redes sociales!</p>
+
                 <ul class="footer__flex__redes__ul">
                     <li>
                         <a href="https://www.instagram.com/lospanesdelola/" target="_blank">
@@ -98,7 +184,7 @@
                 </ul>
             </div>
             <div class="footer__flex__nav col-12 col-md-6">
-                <p>Navegacion</p>
+                <p class="titulo__footer">Navegacion</p>
                 <ul class="footer__flex__nav__ul">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./tienda.html">Tienda</a></li>
@@ -109,8 +195,10 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 
-</html> 
+</html>
